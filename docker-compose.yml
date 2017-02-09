@@ -1,2 +1,4 @@
 app:
-  image: techcorridorio/jobengine
+  build: .
+  volumes:
+    - .:/src
