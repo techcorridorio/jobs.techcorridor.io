@@ -1,2 +1,3 @@
 # jobs.techcorridor.io
-Holding place for a public jobs site for Iowa's Tech Corridor
+
+A public jobs site for Iowa's Technology Corridor, built with [JobEngine](https://github.com/techcorridorio/JobEngine).
