@@ -1,0 +1,7 @@
+sudo: required
+services:
+- docker
+install:
+- docker-compose build
+script:
+- script/ci
