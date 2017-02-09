@@ -1,4 +1,4 @@
 #!/bin/sh
 set -xe
 
-docker-compose run app middleman build
+docker-compose run app middleman build --verbose
