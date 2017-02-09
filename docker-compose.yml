@@ -2,3 +2,6 @@ app:
   build: .
   volumes:
     - .:/src
+  command: middleman server
+  ports:
+    - "4567:4567"
