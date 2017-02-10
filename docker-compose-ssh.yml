@@ -1,0 +1,10 @@
+# This is in a separate file so SSH access is always explicit.
+#
+# TODO: use `version: 2` so that this can be chained with `-f`
+app:
+  build: .
+  volumes:
+    - .:/src
+    - "${SSH_AUTH_SOCK}:/ssh-agent"
+  environment:
+    SSH_AUTH_SOCK: /ssh-agent
