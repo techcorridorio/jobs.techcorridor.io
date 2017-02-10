@@ -64,6 +64,10 @@ class PositionCollection
     @positions.length
   end
 
+  def all
+    @positions
+  end
+
   def featured
     @positions.select { |position| position.featured? }
   end

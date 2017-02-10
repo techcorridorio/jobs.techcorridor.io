@@ -1,0 +1,9 @@
+---
+title: All Positions
+---
+
+<h2>Showing <%= job_engine.positions.count %> Positions</h2>
+
+<% job_engine.positions.all.each do |position| %>
+  <%= partial :position, locals: { position: position } %>
+<% end %>

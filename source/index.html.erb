@@ -11,3 +11,7 @@ title: Featured Positions
     <%= partial :position, locals: { position: position } %>
   <% end %>
 <% end %>
+
+<p>
+  <%= link_to "See all #{job_engine.positions.count} positions &rarr;", 'positions/' %>
+</p>
