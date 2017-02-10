@@ -27,12 +27,64 @@ end
 # Helpers
 ###
 
+class Position
+  attr_reader :featured, :title, :type, :company, :company_url, :location
+
+  def initialize(data)
+    @featured = data[:featured]
+    @title = data[:title]
+    @type = data[:type]
+    @company = data[:company]
+    @company_url = data[:company_url]
+    @location = data[:location]
+  end
+
+  def featured?
+    !!@featured
+  end
+end
+
+class PositionCollection
+  def self.new_from_sitemap(sitemap)
+    positions = sitemap.
+      resources.
+      select { |resource| resource.data[:position] }.
+      map { |resource| Position.new(resource.data[:position]) }
+
+    new(positions)
+  end
+
+  attr_reader :positions
+
+  def initialize(positions)
+    @positions = positions
+  end
+
+  def count
+    @positions.length
+  end
+
+  def featured
+    @positions.select { |position| position.featured? }
+  end
+end
+
+class JobEngine
+  def initialize(context)
+    @context = context
+  end
+
+  def positions
+    PositionCollection.new_from_sitemap(@context.sitemap)
+  end
+end
+
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def job_engine
+    JobEngine.new(self)
+  end
+end
 
 # Build-specific configuration
 configure :build do

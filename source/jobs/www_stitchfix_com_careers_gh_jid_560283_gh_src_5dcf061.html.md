@@ -1,10 +1,11 @@
 ---
-guid: https://www.stitchfix.com/careers?gh_jid=560283&gh_src=5dcf061
-type: Full Time
-title: Principal Developer Tools Engineer
-company: Stitch Fix
-company_url: https://www.stitchfix.com/
-location: Remote
+position:
+  guid: https://www.stitchfix.com/careers?gh_jid=560283&gh_src=5dcf061
+  type: Full Time
+  title: Principal Developer Tools Engineer
+  company: Stitch Fix
+  company_url: https://www.stitchfix.com/
+  location: Remote
 ---
 
 <p><span style="font-weight: 400;">Stitch Fix is an online personal styling startup in San Francisco, combining art and science to disrupt and redefine the retail industry. Our engineering teams build the tools that run our business, from our customer-facing website and mobile app to unique and innovative tools that power our warehouse, merchandising, and styling teams. We leverage vast amounts of client data to make decisions throughout the company. All of this results in a simple, powerful offering to our customers and a successful, growing business. We believe we are only scratching the surface of our opportunity, and we’re looking for incredible people to contribute!</span></p>

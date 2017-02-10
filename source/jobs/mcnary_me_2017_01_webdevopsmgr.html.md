@@ -1,10 +1,11 @@
 ---
-guid: https://mcnary.me/2017/01/webdevopsmgr/
-type: Full Time
-title: WebDev Ops Manager
-company: McNary Marketing & Design LLC
-company_url: https://mcnary.me/
-location: Cedar Rapids, IA
+position:
+  guid: https://mcnary.me/2017/01/webdevopsmgr/
+  type: Full Time
+  title: WebDev Ops Manager
+  company: McNary Marketing & Design LLC
+  company_url: https://mcnary.me/
+  location: Cedar Rapids, IA
 ---
 
 <h3><span style="font-weight: 400;"><em>Do you have base skills in </em></span><em><b>web development</b><span style="font-weight: 400;"> and </span><b>project management</b><span style="font-weight: 400;"> while also looking for a </span><b>huge growth opportunity</b><span style="font-weight: 400;"> with a growing business? Heck yes?! You’ll want to read on…</span></em></h3>

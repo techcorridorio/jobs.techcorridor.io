@@ -1,10 +1,11 @@
 ---
-guid: http://jobs.jobvite.com/careers/metacommunications/job/olEK4fwx
-type: Full Time
-title: Support Engineer
-company: MetaCommunications
-company_url: http://metacommunications.com/
-location: Iowa City, IA
+position:
+  guid: http://jobs.jobvite.com/careers/metacommunications/job/olEK4fwx
+  type: Full Time
+  title: Support Engineer
+  company: MetaCommunications
+  company_url: http://metacommunications.com/
+  location: Iowa City, IA
 ---
 
 
