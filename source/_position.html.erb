@@ -1,4 +1,10 @@
-<h3><%= position.title %></h3>
+<h3>
+  <% if position.has_path? %>
+    <%= link_to position.title, position.absolute_path %>
+  <% else %>
+    <%= position.title %>
+  <% end %>
+</h3>
 
 <p>
   <%= link_to position.company, position.company_url, target: '_blank' %>

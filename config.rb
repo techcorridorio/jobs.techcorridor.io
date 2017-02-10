@@ -28,9 +28,11 @@ end
 ###
 
 class Position
-  attr_reader :featured, :title, :type, :company, :company_url, :location
+  attr_reader :path, :featured, :title, :type, :company, :company_url, :location
 
-  def initialize(data)
+  def initialize(data, relative_path = nil)
+    @relative_path = relative_path
+
     @featured = data[:featured]
     @title = data[:title]
     @type = data[:type]
@@ -42,6 +44,14 @@ class Position
   def featured?
     !!@featured
   end
+
+  def has_path?
+    !!@relative_path
+  end
+
+  def absolute_path
+    "/#@relative_path"
+  end
 end
 
 class PositionCollection
@@ -49,7 +59,7 @@ class PositionCollection
     positions = sitemap.
       resources.
       select { |resource| resource.data[:position] }.
-      map { |resource| Position.new(resource.data[:position]) }
+      map { |resource| Position.new(resource.data[:position], resource.path) }
 
     new(positions)
   end
