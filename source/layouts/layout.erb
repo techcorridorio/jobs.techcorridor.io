@@ -16,19 +16,21 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <h1>
-      <%= link_to 'TechCorridor.io Jobs', '/' %>
-    </h1>
+    <div class="container">
+      <h1>
+        <%= link_to 'TechCorridor.io Jobs', '/' %>
+      </h1>
 
-    <%= yield %>
+      <%= yield %>
 
-    <footer>
-      <p>
-        <small>
-          &copy; 2016 - <%= Date.today.year %> Contributors.
-          (Want to help?  Check out <a href="https://github.com/techcorridorio/jobs.techcorridor.io">our repo on GitHub</a> and <a href="https://techcorridorio-slackin.herokuapp.com/">our Slack</a>.)
-        </small>
-      </p>
-    </footer>
+      <footer>
+        <p>
+          <small>
+            &copy; 2016 - <%= Date.today.year %> Contributors.
+            (Want to help?  Check out <a href="https://github.com/techcorridorio/jobs.techcorridor.io">our repo on GitHub</a> and <a href="https://techcorridorio-slackin.herokuapp.com/">our Slack</a>.)
+          </small>
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
