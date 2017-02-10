@@ -121,8 +121,18 @@ helpers do
   end
 end
 
+configure :development do
+  activate :google_analytics do |ga|
+    ga.tracking_id = false
+  end
+end
+
 # Build-specific configuration
 configure :build do
+  activate :google_analytics do |ga|
+    ga.tracking_id = 'UA-91743483-1'
+  end
+
   # Minify CSS on build
   # activate :minify_css
 

@@ -8,6 +8,7 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= [current_page.data.title, position.page_title, "TechCorridor.io Jobs, a job board for Iowa's Tech Corridor"].compact.join(' - ') %></title>
 
+    <%= google_analytics_tag %>
     <%= stylesheet_link_tag 'bootstrap' %>
     <%= stylesheet_link_tag 'bootstrap-theme' %>
     <%= stylesheet_link_tag :site %>
