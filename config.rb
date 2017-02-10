@@ -31,6 +31,10 @@ end
 ###
 
 class Position
+  def self.null
+    new({})
+  end
+
   attr_reader :path, :featured, :title, :type, :company, :company_url, :location
 
   def initialize(data, relative_path = nil)
@@ -42,6 +46,12 @@ class Position
     @company = data[:company]
     @company_url = data[:company_url]
     @location = data[:location]
+  end
+
+  def page_title
+    if title && company
+      "#{title} at #{company}"
+    end
   end
 
   def featured?
@@ -103,7 +113,11 @@ helpers do
   end
 
   def position
-    Position.new(current_page.data[:position])
+    if current_page.data[:position]
+      Position.new(current_page.data[:position])
+    else
+      Position.null
+    end
   end
 end
 
