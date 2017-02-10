@@ -9,6 +9,9 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+page '/positions/index.html', layout: 'layout'
+page '/positions/*', layout: 'position'
+
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
@@ -97,6 +100,10 @@ end
 helpers do
   def job_engine
     JobEngine.new(self)
+  end
+
+  def position
+    Position.new(current_page.data[:position])
   end
 end
 
