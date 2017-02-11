@@ -30,9 +30,9 @@ end
 # Helpers
 ###
 
-module JobEngine
-  require 'uri'
+require 'uri'
 
+module JobEngine
   class Position
     def self.null
       new({})
@@ -81,7 +81,9 @@ module JobEngine
       end
     end
   end
+end
 
+module JobEngine
   class PositionFactory
     def initialize(resource)
       @resource = resource
@@ -112,7 +114,9 @@ module JobEngine
       File.mtime(@resource.source_file)
     end
   end
+end
 
+module JobEngine
   class PositionCollectionFactory
     def initialize(resources)
       @resources = resources
@@ -126,9 +130,11 @@ module JobEngine
       PositionCollection.new(positions)
     end
   end
+end
 
-  require 'forwardable'
+require 'forwardable'
 
+module JobEngine
   class PositionCollection
     extend Forwardable
     include Enumerable
@@ -159,7 +165,9 @@ module JobEngine
       self.class.new(array)
     end
   end
+end
 
+module JobEngine
   class JobEngine
     def initialize(context)
       @context = context
@@ -173,7 +181,9 @@ module JobEngine
       PositionCollectionFactory.new(@context.sitemap.resources).position_collection
     end
   end
+end
 
+module JobEngine
   module MiddlemanHelpers
     def job_engine
       JobEngine.new(self)
