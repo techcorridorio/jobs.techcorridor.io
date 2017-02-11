@@ -1,7 +1,8 @@
 @charset "utf-8";
+@import "tcio_brand";
 
-/* Move down content because we have a fixed navbar that is 50px tall */
+/* Move down content because we have a fixed navbar that is 60px tall */
 body {
-  padding-top: 50px;
+  padding-top: 60px;
   padding-bottom: 20px;
 }
