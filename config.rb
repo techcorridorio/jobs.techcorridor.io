@@ -39,9 +39,8 @@ class Position
 
   attr_reader :path, :source_url, :featured, :title, :type, :company, :company_url, :location
 
-  def initialize(data, path = nil)
-    @path = path
-
+  def initialize(data)
+    @path = data[:path]
     @source_url = data[:source_url]
     @featured = data[:featured]
     @title = data[:title]
@@ -59,10 +58,6 @@ class Position
 
   def featured?
     !!@featured
-  end
-
-  def has_path?
-    !!@path
   end
 
   def absolute_path
@@ -88,7 +83,11 @@ class PositionFactory
 
   def position
     if @resource.data[:position]
-      Position.new(@resource.data[:position], @resource.path)
+      data = @resource.
+        data[:position].
+        merge(path: @resource.path)
+
+      Position.new(data)
     else
       Position.null
     end
