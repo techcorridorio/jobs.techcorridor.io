@@ -37,10 +37,11 @@ class Position
     new({})
   end
 
-  attr_reader :path, :source_url, :featured, :title, :type, :company, :company_url, :location
+  attr_reader :path, :updated_at, :source_url, :featured, :title, :type, :company, :company_url, :location
 
   def initialize(data)
     @path = data[:path]
+    @updated_at = data[:updated_at]
     @source_url = data[:source_url]
     @featured = data[:featured]
     @title = data[:title]
@@ -85,12 +86,25 @@ class PositionFactory
     if @resource.data[:position]
       data = @resource.
         data[:position].
-        merge(path: @resource.path)
+        merge(extended_data)
 
       Position.new(data)
     else
       Position.null
     end
+  end
+
+  private
+
+  def extended_data
+    {
+      path: @resource.path,
+      updated_at: updated_at,
+    }
+  end
+
+  def updated_at
+    File.mtime(@resource.source_file)
   end
 end
 
