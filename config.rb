@@ -174,7 +174,7 @@ module JobEngine
     end
   end
 
-  module JobEngineHelpers
+  module MiddlemanHelpers
     def job_engine
       JobEngine.new(self)
     end
@@ -182,7 +182,7 @@ module JobEngine
 end
 
 # Methods defined in the helpers block are available in templates
-helpers JobEngine::JobEngineHelpers
+helpers JobEngine::MiddlemanHelpers
 
 configure :development do
   activate :google_analytics do |ga|
