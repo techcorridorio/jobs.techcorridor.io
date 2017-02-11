@@ -1,6 +1,6 @@
 ---
 position:
-  guid: https://www.stitchfix.com/careers?gh_jid=126152&gh_src=q41m7b
+  source_url: https://www.stitchfix.com/careers?gh_jid=126152&gh_src=q41m7b
   type: Full Time
   title: Principal Full Stack Rails Engineer - Expert Use
   company: Stitch Fix

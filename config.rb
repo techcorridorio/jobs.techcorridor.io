@@ -30,16 +30,19 @@ end
 # Helpers
 ###
 
+require 'uri'
+
 class Position
   def self.null
     new({})
   end
 
-  attr_reader :path, :featured, :title, :type, :company, :company_url, :location
+  attr_reader :path, :source_url, :featured, :title, :type, :company, :company_url, :location
 
   def initialize(data, relative_path = nil)
     @relative_path = relative_path
 
+    @source_url = data[:source_url]
     @featured = data[:featured]
     @title = data[:title]
     @type = data[:type]
@@ -64,6 +67,17 @@ class Position
 
   def absolute_path
     "/#@relative_path"
+  end
+
+  def has_source_url?
+    !!@source_url
+  end
+
+  def source_hostname
+    if has_source_url?
+      uri = URI.parse(@source_url)
+      uri.hostname
+    end
   end
 end
 

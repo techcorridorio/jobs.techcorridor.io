@@ -1,6 +1,6 @@
 ---
 position:
-  guid: http://jobs.jobvite.com/careers/metacommunications/job/olEK4fwx
+  source_url: http://jobs.jobvite.com/careers/metacommunications/job/olEK4fwx
   type: Full Time
   title: Support Engineer
   company: MetaCommunications

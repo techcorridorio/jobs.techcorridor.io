@@ -1,6 +1,6 @@
 ---
 position:
-  guid: https://www.stitchfix.com/careers?gh_jid=560283&gh_src=5dcf061
+  source_url: https://www.stitchfix.com/careers?gh_jid=560283&gh_src=5dcf061
   type: Full Time
   title: Principal Developer Tools Engineer
   company: Stitch Fix

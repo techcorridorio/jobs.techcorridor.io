@@ -1,6 +1,6 @@
 ---
 position:
-  guid: https://mcnary.me/2017/01/webdevopsmgr/
+  source_url: https://mcnary.me/2017/01/webdevopsmgr/
   type: Full Time
   title: WebDev Ops Manager
   company: McNary Marketing & Design LLC

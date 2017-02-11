@@ -2,4 +2,13 @@
   <%= partial :position, locals: { position: position } %>
 
   <%= yield %>
+
+  <p>
+    <% if position.has_source_url? %>
+      <%= link_to "Apply at #{position.source_hostname}",
+        position.source_url,
+        class: 'btn btn-primary btn-lg',
+        target: '_blank' %>
+    <% end %>
+  </p>
 <% end %>
