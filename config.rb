@@ -51,6 +51,10 @@ class Position
     @location = data[:location]
   end
 
+  def guid
+    @guid ||= File.basename(path).split('.').first
+  end
+
   def page_title
     if title && company
       "#{title} at #{company}"
