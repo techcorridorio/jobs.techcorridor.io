@@ -106,8 +106,7 @@ class JobEngine
   end
 end
 
-# Methods defined in the helpers block are available in templates
-helpers do
+module JobEngineHelpers
   def job_engine
     JobEngine.new(self)
   end
@@ -120,6 +119,9 @@ helpers do
     end
   end
 end
+
+# Methods defined in the helpers block are available in templates
+helpers JobEngineHelpers
 
 configure :development do
   activate :google_analytics do |ga|
