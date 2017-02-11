@@ -7,7 +7,7 @@ title: Featured Positions
 <% if job_engine.positions.featured.empty? %>
   <p>There are currently no featured positions.</p>
 <% else %>
-  <% job_engine.positions.featured.each do |position| %>
+  <% job_engine.positions.featured.reverse_chronological.each do |position| %>
     <%= partial :position, locals: { position: position } %>
   <% end %>
 <% end %>

@@ -122,7 +122,14 @@ class PositionCollectionFactory
   end
 end
 
+require 'forwardable'
+
 class PositionCollection
+  extend Forwardable
+  include Enumerable
+
+  def_delegators :@positions, :each, :empty?
+
   attr_reader :positions
 
   def initialize(positions)
@@ -137,8 +144,18 @@ class PositionCollection
     @positions
   end
 
+  def reverse_chronological
+    wrap(@positions.sort_by { |position| position.updated_at }.reverse)
+  end
+
   def featured
-    @positions.select { |position| position.featured? }
+    wrap(@positions.select { |position| position.featured? })
+  end
+
+  private
+
+  def wrap(array)
+    self.class.new(array)
   end
 end
 

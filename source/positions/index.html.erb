@@ -4,6 +4,6 @@ title: All Positions
 
 <h2>Showing <%= job_engine.positions.count %> Positions</h2>
 
-<% job_engine.positions.all.each do |position| %>
+<% job_engine.positions.reverse_chronological.each do |position| %>
   <%= partial :position, locals: { position: position } %>
 <% end %>
