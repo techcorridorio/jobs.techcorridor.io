@@ -81,12 +81,26 @@ class Position
   end
 end
 
+class PositionFactory
+  def initialize(resource)
+    @resource = resource
+  end
+
+  def position
+    if @resource.data[:position]
+      Position.new(@resource.data[:position], @resource.path)
+    else
+      Position.null
+    end
+  end
+end
+
 class PositionCollection
   def self.new_from_sitemap(sitemap)
     positions = sitemap.
       resources.
       select { |resource| resource.data[:position] }.
-      map { |resource| Position.new(resource.data[:position], resource.path) }
+      map { |resource| PositionFactory.new(resource).position }
 
     new(positions)
   end
@@ -126,11 +140,7 @@ module JobEngineHelpers
   end
 
   def position
-    if current_page.data[:position]
-      Position.new(current_page.data[:position])
-    else
-      Position.null
-    end
+    PositionFactory.new(current_page).position
   end
 end
 
