@@ -140,10 +140,6 @@ class PositionCollection
     @positions.length
   end
 
-  def all
-    @positions
-  end
-
   def reverse_chronological
     wrap(@positions.sort_by { |position| position.updated_at }.reverse)
   end
