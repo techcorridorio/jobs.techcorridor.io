@@ -39,8 +39,8 @@ class Position
 
   attr_reader :path, :source_url, :featured, :title, :type, :company, :company_url, :location
 
-  def initialize(data, relative_path = nil)
-    @relative_path = relative_path
+  def initialize(data, path = nil)
+    @path = path
 
     @source_url = data[:source_url]
     @featured = data[:featured]
@@ -62,11 +62,11 @@ class Position
   end
 
   def has_path?
-    !!@relative_path
+    !!@path
   end
 
   def absolute_path
-    "/#@relative_path"
+    "/#@path"
   end
 
   def has_source_url?
