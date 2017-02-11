@@ -1,9 +1,5 @@
 <h3>
-  <% if position.has_path? %>
-    <%= link_to position.title, position.absolute_path %>
-  <% else %>
-    <%= position.title %>
-  <% end %>
+  <%= link_to position.title, position.absolute_path %>
 </h3>
 
 <p>

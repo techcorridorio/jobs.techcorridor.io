@@ -134,6 +134,10 @@ class JobEngine
     @context = context
   end
 
+  def position
+    PositionFactory.new(@context.current_page).position
+  end
+
   def positions
     PositionCollectionFactory.new(@context.sitemap.resources).position_collection
   end
@@ -142,10 +146,6 @@ end
 module JobEngineHelpers
   def job_engine
     JobEngine.new(self)
-  end
-
-  def position
-    PositionFactory.new(current_page).position
   end
 end
 
