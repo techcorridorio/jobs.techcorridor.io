@@ -17,7 +17,15 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
+          <!-- FIXME Add hamburger menu for mobile -->
+
           <a class="navbar-brand" href="/">jobs.tech<span>corridor</span>.io</a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse pull-right">
+          <ul class="nav navbar-nav">
+            <li><%= link_to 'Post a position', job_engine.new_position_url, target: '_blank' %></li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -29,7 +37,7 @@
         <p>
           <small>
             &copy; 2016 - <%= Date.today.year %> Contributors.
-            (Want to help?  Check out <a href="https://github.com/techcorridorio/jobs.techcorridor.io">our repo on GitHub</a> and <a href="https://techcorridorio-slackin.herokuapp.com/">our Slack</a>.)
+            (Want to help?  Check out <%= link_to 'our repo on GitHub', config.github_url %> and <a href="https://techcorridorio-slackin.herokuapp.com/">our Slack</a>.)
           </small>
         </p>
       </footer>

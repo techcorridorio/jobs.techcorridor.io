@@ -13,4 +13,22 @@
         target: '_blank' %>
     <% end %>
   </p>
+
+  <hr />
+
+  <p>
+    Propose changes to this position:
+
+    <%= link_to 'Edit',
+      job_engine.edit_position_url(position),
+      class: 'btn btn-xs btn-default',
+      target: '_blank' %>
+
+    <%= link_to 'Delete',
+      job_engine.delete_position_url(position),
+      class: 'btn btn-xs btn-danger',
+      target: '_blank' %>
+  </p>
+
+  <hr />
 <% end %>

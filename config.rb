@@ -21,6 +21,8 @@ page '/positions/*', layout: 'position'
 
 # General configuration
 
+config.github_url = 'https://github.com/techcorridorio/jobs.techcorridor.io'
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
@@ -38,10 +40,11 @@ module JobEngine
       new({})
     end
 
-    attr_reader :path, :updated_at, :source_url, :featured, :title, :type, :company, :company_url, :location
+    attr_reader :path, :source_path, :updated_at, :source_url, :featured, :title, :type, :company, :company_url, :location
 
     def initialize(data)
       @path = data[:path]
+      @source_path = data[:source_path]
       @updated_at = data[:updated_at]
       @source_url = data[:source_url]
       @featured = data[:featured]
@@ -106,8 +109,13 @@ module JobEngine
     def extended_data
       {
         path: @resource.path,
+        source_path: source_path,
         updated_at: updated_at,
       }
+    end
+
+    def source_path
+      @resource.source_file.sub(%r{^/src/}, '')
     end
 
     def updated_at
@@ -179,6 +187,24 @@ module JobEngine
 
     def positions
       PositionCollectionFactory.new(@context.sitemap.resources).position_collection
+    end
+
+    def new_position_url
+      "#{github_url}/new/master/source/positions?filename=my_position.html.md"
+    end
+
+    def edit_position_url(position)
+      "#{github_url}/edit/master/#{position.source_path}"
+    end
+
+    def delete_position_url(position)
+      "#{github_url}/delete/master/#{position.source_path}"
+    end
+
+    private
+
+    def github_url
+      @context.config.github_url
     end
   end
 end
