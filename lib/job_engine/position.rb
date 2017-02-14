@@ -31,6 +31,8 @@ module JobEngine
       end
     end
 
+    alias_method :atom_title, :page_title
+
     def featured?
       !!@featured
     end

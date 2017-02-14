@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'builder'
 gem 'mini_racer'
 
 # Middleman Gems

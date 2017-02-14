@@ -23,6 +23,7 @@ page '/positions/*', layout: 'position'
 
 # General configuration
 
+config.site_name = 'jobs.techcorridor.io'
 config.github_url = 'https://github.com/techcorridorio/jobs.techcorridor.io'
 
 # Reload the browser automatically whenever files change
@@ -38,6 +39,8 @@ end
 helpers JobEngine::MiddlemanHelpers
 
 configure :development do
+  config.base_url = 'http://0.0.0.0:4567'
+
   activate :google_analytics do |ga|
     ga.tracking_id = false
   end
@@ -45,6 +48,8 @@ end
 
 # Build-specific configuration
 configure :build do
+  config.base_url = 'http://jobs.techcorridor.io'
+
   activate :minify_css
   activate :minify_javascript
 
