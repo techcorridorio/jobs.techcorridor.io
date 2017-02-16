@@ -1,9 +1,10 @@
+require 'ostruct'
 require 'uri'
 
 module JobEngine
   class Position
     def self.null
-      new({})
+      OpenStruct.new
     end
 
     attr_reader :path, :source_path, :updated_at, :source_url, :featured, :title, :type, :company, :company_url, :location
