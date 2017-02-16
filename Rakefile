@@ -9,5 +9,5 @@ namespace :techcorridorio do
   end
 
   desc 'Publish to jobs.techcorridor.io'
-  task :publish => [:clean, :config, :publish]
+  task :publish => ['job_engine:clean', :config, :publish]
 end
