@@ -1,7 +1,0 @@
-require 'lib/job_engine/position'
-require 'lib/job_engine/position_factory'
-require 'lib/job_engine/position_collection'
-require 'lib/job_engine/position_collection_factory'
-require 'lib/job_engine/job_engine'
-require 'lib/job_engine/middleman_helpers'
-require 'lib/job_engine/positions_atom_feed'

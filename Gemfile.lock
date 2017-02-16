@@ -36,6 +36,8 @@ GEM
     hashie (3.5.1)
     http_parser.rb (0.6.0)
     i18n (0.7.0)
+    job_engine (0.1.0)
+      builder (~> 3.2)
     kramdown (1.13.2)
     libv8 (5.3.332.38.3-x86_64-linux)
     listen (3.0.8)
@@ -119,6 +121,7 @@ PLATFORMS
 
 DEPENDENCIES
   builder
+  job_engine (= 0.1.0)
   middleman (>= 4.0.0)
   middleman-gh-pages
   middleman-google-analytics

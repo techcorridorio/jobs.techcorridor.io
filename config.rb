@@ -1,4 +1,4 @@
-require 'lib/job_engine'
+require 'job_engine'
 
 ###
 # Page options, layouts, aliases and proxies

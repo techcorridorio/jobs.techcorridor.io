@@ -1,5 +1,5 @@
 require 'middleman-gh-pages'
-require_relative './lib/job_engine/tasks/job_engine'
+require 'job_engine/tasks/job_engine'
 
 namespace :techcorridorio do
   desc 'Set up robot git config'
