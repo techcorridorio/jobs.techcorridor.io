@@ -1,12 +1,7 @@
-require 'fileutils'
 require 'middleman-gh-pages'
+require_relative './lib/job_engine/tasks/job_engine'
 
 namespace :jobengine do
-  desc 'Clean up generated files'
-  task :clean do
-    FileUtils.rm_rf('build', verbose: true)
-  end
-
   desc 'Set up robot git config'
   task :config do
     sh 'git config --global user.name "JobEngine Bot"'
