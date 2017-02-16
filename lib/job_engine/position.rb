@@ -10,11 +10,12 @@ module JobEngine
     attr_reader :path, :source_path, :updated_at, :source_url, :featured, :title, :type, :company, :company_url, :location
 
     def initialize(data)
+      @featured = data[:featured]
+
       @path = data[:path]
       @source_path = data[:source_path]
       @updated_at = data[:updated_at]
       @source_url = data[:source_url]
-      @featured = data[:featured]
       @title = data[:title]
       @type = data[:type]
       @company = data[:company]
