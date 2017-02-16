@@ -8,5 +8,6 @@ namespace :techcorridorio do
     sh 'git config --global user.email "info@techcorridor.io"'
   end
 
+  desc 'Publish to jobs.techcorridor.io'
   task :publish => [:clean, :config, :publish]
 end
