@@ -1,4 +1,4 @@
-FROM techcorridorio/jobengine:latest
+FROM techcorridorio/job_engine:latest
 
 USER root
 RUN pkg-deb openssh-client # for `rake publish`
