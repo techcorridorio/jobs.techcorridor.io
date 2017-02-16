@@ -1,8 +1,4 @@
 #!/bin/sh
 set -xe
 
-# Build verbosely if `rake build` failed
-docker-compose run app rake build || \
-  docker-compose run app middleman build --verbose
-
-docker-compose run app linkchecker 'build/'
+docker-compose run app rake job_engine:check_links
