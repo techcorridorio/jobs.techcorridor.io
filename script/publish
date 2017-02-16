@@ -2,4 +2,4 @@
 set -xe
 
 git push
-docker-compose -f docker-compose-ssh.yml run app rake jobengine:publish
+docker-compose -f docker-compose-ssh.yml run app rake techcorridorio:publish
