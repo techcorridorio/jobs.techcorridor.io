@@ -16,19 +16,42 @@
 
   <hr />
 
-  <p>
-    Propose changes to this position:
+  <details>
+    <summary><a style="cursor: pointer">Notice something about this posting that needs to be changed?</a></summary>
 
-    <%= link_to 'Edit',
-      job_engine.edit_position_url(position),
-      class: 'btn btn-xs btn-default',
-      target: '_blank' %>
+    <small>
+      <p>You can propose changes to this page using GitHub.  All changes are reviewed by an administrator before they're accepted and published.  The change history is public and can be reviewed by anyone.</a>
 
-    <%= link_to 'Delete',
-      job_engine.delete_position_url(position),
-      class: 'btn btn-xs btn-danger',
-      target: '_blank' %>
-  </p>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th>
+              <%= link_to 'Delete',
+                job_engine.delete_position_url(position),
+                class: 'btn btn-xs btn-default',
+                target: '_blank' %>
+            </th>
+            <td>
+              If this position is no longer available, you can propose <strong>deleting</strong> it.  This is only typically necessary when the job posting has been taken down but the position is still listed here.
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <%= link_to 'Edit',
+                job_engine.edit_position_url(position),
+                class: 'btn btn-xs btn-default',
+                target: '_blank' %>
+            </th>
+
+            <td>
+              If this position has an error, you can propose <strong>edits</strong> to it.  Changing content happens rarely and is only accepted from contributors with ties to the company in question or if there is a clear typographical error (such as a broken link, which happens on occasion).  We appreciate anyone taking the time to correct these issues.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </small>
+  </details>
 
   <hr />
 <% end %>
