@@ -42,7 +42,7 @@ Here's an example:.
 
 #### Request assistance
 
-If you don't know what any of the above means, <a class="mailto" data-email="am9ic0B0ZWNoY29ycmlkb3IuaW8=">send us an email</a> asking for help making the above pull request.  Please include all relevant position details.
+If you don't know what any of the above means, <a class="mailto" data-email="am9ic0B0ZWNoY29ycmlkb3IuaW8=">send us an email</a> asking for help posting your position.  Please include all relevant position details in your email.
 
 <script>
   (function () {
