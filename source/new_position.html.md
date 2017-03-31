@@ -40,6 +40,12 @@ Here's an example:.
 
     The text of your job description goes here.  It can contain **Markdown** or <b>HTML</b> markup.
 
+      * This is an example of a bulleted list in Markdown.
+      * It looks about like what you'd expect in a plain-text email.
+      * This is the last bullet point.
+
+    This is the final paragraph in this job posting.
+
 #### Request assistance
 
 If you don't know what any of the above means, <a class="mailto" data-email="am9ic0B0ZWNoY29ycmlkb3IuaW8=">send us an email</a> asking for help posting your position.  Please include all relevant position details in your email.
