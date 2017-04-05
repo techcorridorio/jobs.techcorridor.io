@@ -8,8 +8,6 @@ position:
   location: Remote
 ---
 
-# Software Developer
-
 Chef is building the best infrastructure automation platform on the planet.
 We’re writing the rules of the cloud – rules the world’s top engineers live,
 breathe and contribute to. We’re some of the world’s most well-known and
