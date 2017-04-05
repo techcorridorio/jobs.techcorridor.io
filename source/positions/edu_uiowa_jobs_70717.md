@@ -2,15 +2,13 @@
 position:
   source_url: https://jobs.uiowa.edu/pands/view/70717
   type: Full Time
-  title: PHOENIX APPLICATION DEVELOPER
+  title: Phoenix Application Developer
   company: University of Iowa
-  company_url: uiowa.edu
+  company_url: http://uiowa.edu
   location: Iowa City, IA
 ---
 
 UI Health Care Information Systems (HCIS) is seeking an Application Developer to design and/or modify components of complex clinical application systems.
-
- 
 
 Core job duties include:
 
