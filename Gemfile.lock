@@ -88,9 +88,12 @@ GEM
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
       rack-livereload (~> 0.3.15)
+    mini_portile2 (2.1.0)
     mini_racer (0.1.8)
       libv8 (~> 5.3)
     minitest (5.10.1)
+    nokogiri (1.7.1)
+      mini_portile2 (~> 2.1.0)
     padrino-helpers (0.13.3.3)
       i18n (~> 0.6, >= 0.6.7)
       padrino-support (= 0.13.3.3)
@@ -98,6 +101,7 @@ GEM
     padrino-support (0.13.3.3)
       activesupport (>= 3.1)
     parallel (1.10.0)
+    pkg-config (1.1.7)
     public_suffix (2.0.5)
     rack (2.0.1)
     rack-livereload (0.3.16)
@@ -127,6 +131,8 @@ DEPENDENCIES
   middleman-google-analytics
   middleman-livereload
   mini_racer
+  nokogiri
+  pkg-config
 
 BUNDLED WITH
    1.14.3

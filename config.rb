@@ -1,4 +1,5 @@
 require 'job_engine'
+require './lib/position_scraper'
 
 ###
 # Page options, layouts, aliases and proxies
@@ -25,6 +26,26 @@ page '/positions/*', layout: 'position'
 
 config.site_name = 'jobs.techcorridor.io'
 config.github_url = 'https://github.com/techcorridorio/jobs.techcorridor.io'
+
+scraper_config = {
+  rss_feeds: [
+    {
+      feed_url: 'https://continuity.recruiterbox.com/jobfeeds/Continuity',
+      company: 'Continuity',
+      company_url: 'http://www.continuity.net/',
+      location: 'Remote',
+      type: 'Full Time',
+      title_filter: 'Software',
+      description_selector: '#job_description',
+    }
+  ]
+}
+
+scraper = PositionScraper.new(scraper_config)
+scraper.fetch.each do |data|
+  position = JobEngine::Position.new(data)
+  proxy '/continuity.html', 'position.html', locals: { position: position, description: data[:description] }
+end
 
 # Reload the browser automatically whenever files change
 configure :development do
