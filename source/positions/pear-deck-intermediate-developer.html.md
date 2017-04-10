@@ -1,6 +1,6 @@
 ---
 position:
-  source_url: https://www.peardeck.com/careers/ux-designer/?utm_source=techcorridor&utm_campaign=March2017Hiring
+  source_url: https://www.peardeck.com/careers/intermediate-developer?utm_source=techcorridor&utm_campaign=March2017Hiring
   type: Full Time
   title: Intermediate Developer
   company: Pear Deck
