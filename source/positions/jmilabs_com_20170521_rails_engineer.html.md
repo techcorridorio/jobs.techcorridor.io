@@ -33,5 +33,5 @@ The work we do is integral to the development of new antibacterial and antifunga
 If you are a great team player, a self-driven prolific coder, a fast learner of new technology and domain subject matter, and want to contribute directly to help the world combat infectious diseases, you could be the perfect next addition to our team.
 
 Please send cover letter and resume to devhiring@jmilabs.com.
-`
+
 JMI Laboratories is an equal opportunity employer. No recruiters or agencies please.
