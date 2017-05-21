@@ -8,7 +8,7 @@ position:
   location: North Liberty, IA
 ---
 
-JMI Laboratories is looking to add a Ruby / Postgres / Rails Engineer as a full time employee to our North Liberty, Iowa office software development team.  Our business is to perform custom microbiology testing on bacteria and fungal samples obtained from around the world to help our clients measure the effectiveness of different antibacterial and antifungal drugs against representative microbial samples sourced from worldwide medical facilities.
+[JMI Laboratories](http://www.jmilabs.com) is looking to add a Ruby / Postgres / Rails Engineer as a full time employee to our North Liberty, Iowa office software development team.  Our business is to perform custom microbiology testing on bacteria and fungal samples obtained from around the world to help our clients measure the effectiveness of different antibacterial and antifungal drugs against representative microbial samples sourced from worldwide medical facilities.
 
 In business since 2000, we have millions of test results in our database and that number grows daily.  We use a very lean and agile approach to developing web apps that allow our in-house team of 50+ microbiology specialists to efficiently schedule and record results of lab tests of tens of thousands of samples per year, as well as tools to help our scientific directors and external clients effectively analyze this information.
 
@@ -32,6 +32,6 @@ The work we do is integral to the development of new antibacterial and antifunga
 
 If you are a great team player, a self-driven prolific coder, a fast learner of new technology and domain subject matter, and want to contribute directly to help the world combat infectious diseases, you could be the perfect next addition to our team.
 
-Please send cover letter and resume to devhiring@jmilabs.com.
+Please send cover letter and resume to <devhiring@jmilabs.com>
 
 JMI Laboratories is an equal opportunity employer. No recruiters or agencies please.
