@@ -19,6 +19,7 @@ This is a position for someone who loves organizing, analyzing, and visualizing 
 The work we do is integral to the development of new antibacterial and antifungal drugs by our clients to improve the health of patients around the world.  At the end of each day you will know that you are helping advance global public health.
 
 **Candidate requirements:**
+
 * B.S. in Computer Science
 * Demonstrated experience with Ruby on Rails
 * Strong relational modelling and SQL skills
@@ -26,6 +27,7 @@ The work we do is integral to the development of new antibacterial and antifunga
 * On-site full-time employment at our North Liberty, Iowa office
 
 **Desirable experience:**
+
 * Geographic and other graphic visualization (d3.js, etc.)
 * UI/UX design or working with designer output
 * Mobile app and mobile optimized web development
