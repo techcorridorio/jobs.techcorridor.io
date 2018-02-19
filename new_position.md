@@ -1,6 +1,9 @@
 ---
 layout: default
 title: New Position
+permalink: /positions/new
+redirect_from:
+  /new_position.html
 ---
 
 ## Post a position
@@ -15,9 +18,9 @@ We are focused on Iowa's Technology Corridor.  Roughly speaking, this includes a
 
 Generally speaking, the positions should be related to **creating** new technology.  For example, software developers, graphic designers, project managers, etc.
 
-### Featured Jobs
+### Featured Positions
 
-If you are interested in featuring a job on the front page, please <a class="mailto" data-email="am9ic0B0ZWNoY29ycmlkb3IuaW8=">send us an email</a>.
+[Find out more about featuring a job on the front page](/featured_positions/new).
 
 ### Posting
 

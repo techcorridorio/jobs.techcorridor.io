@@ -20,6 +20,7 @@ collections:
 
 markdown: kramdown
 plugins:
+  - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap # keep this last
 exclude:
