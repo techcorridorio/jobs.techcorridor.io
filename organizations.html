@@ -1,0 +1,11 @@
+---
+layout: default
+title: All Organizations
+permalink: /organizations/
+---
+
+<h2>Showing {{ site.organizations.size }} Organizations</h2>
+
+{% for organization in site.organizations %}
+  {% include organization.html organization=organization %}
+{% endfor %}

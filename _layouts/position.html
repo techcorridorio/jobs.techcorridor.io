@@ -18,39 +18,6 @@ layout: default
 
 <hr />
 
-<details>
-  <summary><a style="cursor: pointer">Notice something about this posting that needs to be changed?</a></summary>
-
-  <small>
-    <p>You can propose changes to this page using GitHub.  All changes are reviewed by an administrator before they're accepted and published.  The change history is public and can be reviewed by anyone.</a>
-
-    <table class="table">
-      <tbody>
-        <tr>
-          <th>
-            <a href="{{ site.github_url }}/delete/master/{{ page.path }}" target="_blank" class="btn btn-xs btn-default">
-              Delete
-            </a>
-          </th>
-          <td>
-            If this position is no longer available, you can propose <strong>deleting</strong> it.  This is only typically necessary when the job posting has been taken down but the position is still listed here.
-          </td>
-        </tr>
-
-        <tr>
-          <th>
-            <a href="{{ site.github_url }}/edit/master/{{ page.path }}" target="_blank" class="btn btn-xs btn-default">
-              Edit
-            </a>
-          </th>
-
-          <td>
-            If this position has an error, you can propose <strong>edits</strong> to it.  Changing content happens rarely and is only accepted from contributors with ties to the company in question or if there is a clear typographical error (such as a broken link, which happens on occasion).  We appreciate anyone taking the time to correct these issues.
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </small>
-</details>
+{% include edit.html %}
 
 <hr />

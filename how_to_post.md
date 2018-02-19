@@ -43,6 +43,17 @@ Here's an example:.
 
     This is the final paragraph in this job posting.
 
+Organizations are similar, but under `_organizations`:
+
+    ---
+    title: Example
+    website_url: http://www.example.com/
+    positions_url: https://www.example.com/
+    location: Iowa City, IA
+    ---
+
+    A blurb about the organization goes here.
+
 <script>
   (function () {
     var i, links, link, email;

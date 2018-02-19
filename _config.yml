@@ -12,9 +12,17 @@ defaults:
       type: positions
     values:
       layout: position
+  - scope:
+      path: ""
+      type: organizations
+    values:
+      layout: organization
 
 collections:
   positions:
+    output: true
+    permalink: /:collection/:name
+  organizations:
     output: true
     permalink: /:collection/:name
 
