@@ -3,7 +3,8 @@
   <title>{{ site.title }}</title>
   <link href="{{ site.url }}"/>
   <updated>{{ site.time | date: "%Y-%m-%dT%H:%M:%S+00:00" }}</updated>
-{% for position in site.positions %}
+{% assign reverse_chronological_positions = site.positions | sort: 'date' %}
+{% for position in reverse_chronological_positions %}
   <entry>
     <id>{{ position.url | replace: "/", "_" }}</id>
     <title>{{ position.title }} at {{ position.company }}</title>

@@ -6,6 +6,7 @@ permalink: /positions/
 
 <h2>Showing {{ site.positions.size }} Positions</h2>
 
-{% for position in site.positions %}
+{% assign reverse_chronological_positions = site.positions | sort: 'date' %}
+{% for position in reverse_chronological_positions %}
   {% include position.html position=position %}
 {% endfor %}
