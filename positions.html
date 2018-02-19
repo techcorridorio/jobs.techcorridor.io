@@ -6,6 +6,10 @@ permalink: /positions/
 
 <h2>Showing {{ site.positions.size }} Positions</h2>
 
+<p>
+  NOTE: This is not an exhaustive list of positions.  <a href="/organizations/">Organizations in the area may have other open positions.</a>
+</p>
+
 {% assign reverse_chronological_positions = site.positions | sort: 'date' %}
 {% for position in reverse_chronological_positions %}
   {% include position.html position=position %}
