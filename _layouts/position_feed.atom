@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.title }}</title>
+  <link href="{{ site.url }}"/>
+  <updated>{{ site.time | date: "%Y-%m-%dT%H:%M:%S+00:00" }}</updated>
+{% for position in site.positions %}
+  <entry>
+    <id>{{ position.url | replace: "/", "_" }}</id>
+    <title>{{ position.title }} at {{ position.company }}</title>
+    <link href="{{ position.url }}"/>
+    <content type="html">See posting for details</content>
+    <updated>{{ position.date | date: "%Y-%m-%dT%H:%M:%S+00:00" }}</updated>
+  </entry>
+{% endfor %}
+</feed>

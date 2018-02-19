@@ -1,6 +1,0 @@
-#!/bin/sh
-set -xe
-
-git push
-script/ci
-docker-compose -f docker-compose-ssh.yml run app rake techcorridorio:publish

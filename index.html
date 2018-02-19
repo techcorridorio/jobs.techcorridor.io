@@ -1,0 +1,20 @@
+---
+layout: default
+title: Featured Positions
+---
+
+<h2>Featured Positions</h2>
+
+{% assign featured_positions = site.positions | where: "featured", "true" %}
+
+{% if featured_positions.size == 0 %}
+  <p>There are currently no featured positions.</p>
+{% else %}
+  {% for position in featured_positions %}
+    {% include position.html position=position %}
+  {% endfor %}
+{% endif %}
+
+<p>
+  <a href="/positions/">See all {{ site.positions.size }} positions &rarr;</a>
+</p>

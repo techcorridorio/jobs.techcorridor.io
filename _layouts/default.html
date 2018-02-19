@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <title>{% if page.title %}{{ page.title }} - {% endif %}TechCorridor.io Jobs, a job board for Iowa's Tech Corridor</title>
+
+    {% seo %}
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="/javascripts/bootstrap.js"></script>
+    {% if jekyll.environment == 'production' and site.google_analytics %}
+      {% include google-analytics.html %}
+    {% endif %}
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FIXME Add hamburger menu for mobile -->
+
+          <a class="navbar-brand" href="/">jobs.tech<span>corridor</span>.io</a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse pull-right">
+          <ul class="nav navbar-nav">
+            <li><a href="/positions/">All positions</a></li>
+            <li><a href="/new_position.html">Post a position</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      {{ content }}
+
+      <footer>
+        <p>
+          <small>
+            &copy; 2016 - {{ site.time | date: '%Y' }} Contributors.
+            <a href="/positions.atom">Atom feed</a>.
+            (Want to help?  Check out <a href="{{ site.github_url }}">our repo on GitHub</a> and <a href="https://techcorridorio-slackin.herokuapp.com/">our Slack</a>.)
+          </small>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

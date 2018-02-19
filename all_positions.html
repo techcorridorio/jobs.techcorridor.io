@@ -1,0 +1,11 @@
+---
+layout: default
+title: All Positions
+permalink: /positions/
+---
+
+<h2>Showing {{ site.positions.size }} Positions</h2>
+
+{% for position in site.positions %}
+  {% include position.html position=position %}
+{% endfor %}

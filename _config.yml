@@ -1,0 +1,28 @@
+# SEO
+title: jobs.techcorridor.io
+description: A jobs site for Iowa's Tech Corridor based
+url: "http://jobs.techcorridor.io"
+
+github_url: "https://github.com/techcorridorio/jobs.techcorridor.io"
+google_analytics: "UA-91743483-1"
+
+defaults:
+  - scope:
+      path: ""
+      type: positions
+    values:
+      layout: position
+
+collections:
+  positions:
+    output: true
+    permalink: /:collection/:name
+
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap # keep this last
+exclude:
+  - CNAME
+  - docker-compose.yml
+  - README.md

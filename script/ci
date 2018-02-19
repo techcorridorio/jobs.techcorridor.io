@@ -1,4 +1,0 @@
-#!/bin/sh
-set -xe
-
-docker-compose run app rake job_engine:check_links

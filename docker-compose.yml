@@ -1,7 +1,7 @@
 app:
-  build: .
+  image: starefossen/github-pages
   volumes:
-    - .:/src
-  command: middleman server
+    - .:/usr/src/app
+  command: jekyll serve --incremental --host 0.0.0.0 --port 4000
   ports:
-    - "4567:4567"
+    - 4000:4000
