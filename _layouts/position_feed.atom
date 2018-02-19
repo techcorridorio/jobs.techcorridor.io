@@ -6,9 +6,9 @@
 {% assign reverse_chronological_positions = site.positions | sort: 'date' %}
 {% for position in reverse_chronological_positions %}
   <entry>
-    <id>{{ position.url | replace: "/", "_" }}</id>
+    <id>{{ position.path | replace: "_positions/", "" | replace: ".md", "" }}</id>
     <title>{{ position.title }} at {{ position.company }}</title>
-    <link href="{{ position.url }}"/>
+    <link href="{{ site.url }}{{ position.url }}"/>
     <content type="html">See posting for details</content>
     <updated>{{ position.date | date: "%Y-%m-%dT%H:%M:%S+00:00" }}</updated>
   </entry>
