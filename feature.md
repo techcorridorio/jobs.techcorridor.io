@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Feature a Position
-permalink: /featured_positions/new
+title: Feature a Position or Organization
+permalink: /featured/new
 ---
 
-## Feature a Position
+## Feature a Position or Organization
 
-Thank you for your interest in featuring a position on this site!  For more information, please <a class="mailto" data-email="am9ic0B0ZWNoY29ycmlkb3IuaW8=">send us an email</a>.
+Thank you for your interest in featuring your position or organization on this site!  For more information, please <a class="mailto" data-email="am9ic0B0ZWNoY29ycmlkb3IuaW8=">send us an email</a>.
 
 <script>
   (function () {
