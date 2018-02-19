@@ -3,7 +3,13 @@
 </h3>
 
 <p>
-  ({{ organization.location }})
+  {% for technology in organization.technologies %}
+    <span class="label label-default">{{ technology }}</span>
+  {% endfor %}
+</p>
+
+<p>
+  {{ organization.location }}
 </p>
 
 <hr />
