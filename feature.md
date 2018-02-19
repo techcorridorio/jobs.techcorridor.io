@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Feature a Position or Organization
-permalink: /featured/new
+permalink: /feature/new
 ---
 
 ## Feature a Position or Organization

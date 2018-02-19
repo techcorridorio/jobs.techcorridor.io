@@ -1,32 +1,32 @@
 ---
 layout: default
-title: New Position
-permalink: /positions/new
+title: New Post
+permalink: /posting/new
 redirect_from:
   /new_position.html
 ---
 
-## Post a Position
+## Post
 
-Thank you for your interest in posting a position on this site!  We have a growing technology community in Iowa's Technology Corridor and we'd love to help connect you.
+Thank you for your interest in adding a position or organization to this site!  We have a growing technology community in Iowa's Technology Corridor and we'd love to help connect you.
 
 _Please understand that this community job board is maintained entirely by volunteers._  We have a vested interest in seeing our tech community grow and thrive, but our time can be limited -- though we'll do our best to review requests quickly.  (Want to lend a hand?  Get in touch in the `#admin` room on our Slack.)
 
 ### Rules
 
-We are focused on Iowa's Technology Corridor.  Roughly speaking, this includes areas near I-380 in Iowa.  Remote jobs are welcomed, but only if the company involved _already has **at least one** employee in the area_.  Generally speaking, the positions should be related to **creating** new technology.  For example, software developers, graphic designers, project managers, etc.
+We are focused on Iowa's Technology Corridor.  Roughly speaking, this includes areas near I-380 in Iowa.  Remote jobs and organizations are welcomed, but only if the company involved _already has **at least one** employee in the area_.  Generally speaking, positions should be related to **creating** new technology.  For example, software developers, graphic designers, project managers, etc.
 
-### How Do I Feature a Position?
+### How Do I Feature a Position or Organization?
 
-Featured positions show up on the front page.  [Find out more about featuring a position](/featured_positions/new).
+Featured positions and organizations show up on the front page.  [Learn more about featuring a position...](/feature/new)
 
 ### How Do I Post?
 
-There are currently 2 ways to post a position.  (This job board is still a bit of an experiment for us.  We plan to make the process easier if there's sufficient interest.)
+There are currently 2 ways to post.  (This job board is still a bit of an experiment for us.  We plan to make the process easier if there's sufficient interest.)
 
 #### Request Assistance
 
-<a class="mailto" data-email="am9ic0B0ZWNoY29ycmlkb3IuaW8=">Send us an email</a> asking for help posting your position.  Please include all relevant position details in your email.
+<a class="mailto" data-email="am9ic0B0ZWNoY29ycmlkb3IuaW8=">Send us an email</a> asking for help posting.  Please include all relevant position/organization details in your email.
 
 #### Pull Request (Preferred)
 
