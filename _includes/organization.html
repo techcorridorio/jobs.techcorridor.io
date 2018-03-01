@@ -2,6 +2,10 @@
   <a href="{{ organization.url }}">{{ organization.title }}</a>
 </h3>
 
+<p>
+  {{ organization.location }}
+</p>
+
 {% if organization.technologies %}
   <p>
     <strong>Tech:</strong>
@@ -11,7 +15,3 @@
     {% endfor %}
   </p>
 {% endif %}
-
-<p>
-  {{ organization.location }}
-</p>
