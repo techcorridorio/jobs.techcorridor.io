@@ -18,13 +18,28 @@ There are currently 2 ways to post.  (This job board is still a bit of an experi
 
 #### Pull Request (Preferred)
 
-This entire website is open source and pull requests to add posts are welcome!  If you have the skills to [make an acceptable pull request]({{ site.github_url }}/new/master/_organizations/_?filename=my_organization.md), that's all that is necessary to get your post published.
+This entire website is open source and pull requests to add posts are welcome!  If you have the skills to , that's all that is necessary to get your post published.
 
-There is currently no database; the job posts are simply a set of Markdown files.  Your position should be stored in a new file in `_positions/*.md`.  The filename should be unique.  One good option for choosing a filename is to base it on the URL of your job posting.  For example, `http://example.com/jobs/12345.html` would become `_positions/example_com_jobs_12345.md`.
+There is currently no database; the job posts are simply a set of Markdown files.  Your organization should be stored in a new file in `_organizations/*.md`.
 
 The content of the file needs to begin with YAML frontmatter describing the position.  The rest of the file is either Markdown or HTML.  Please limit your HTML to simple formatting only, generally the same subset that Markdown allows.
 
-Here's an example:.
+[Post an organization]({{ site.github_url }}/new/master/_organizations/_?filename=my_organization.md)
+
+Here's an example organization:
+
+    ---
+    title: Example
+    website_url: http://www.example.com/
+    positions_url: https://www.example.com/
+    location: Iowa City, IA
+    ---
+
+    A blurb about the organization goes here.
+    
+[Post a position]({{ site.github_url }}/new/master/_positions/_?filename=my_position.md)
+
+Here's an example position:
 
     ---
     source_url: http://example.com/jobs/12345.html
@@ -43,16 +58,6 @@ Here's an example:.
 
     This is the final paragraph in this job posting.
 
-Organizations are similar, but under `_organizations`:
-
-    ---
-    title: Example
-    website_url: http://www.example.com/
-    positions_url: https://www.example.com/
-    location: Iowa City, IA
-    ---
-
-    A blurb about the organization goes here.
 
 <script>
   (function () {
