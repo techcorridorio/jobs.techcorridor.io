@@ -5,6 +5,8 @@ layout: default
 {% assign organization = page %}
 {% include organization.html organization=organization %}
 
+<hr>
+
 <p>
   {% if organization.website_url %}
     <a href="{{ organization.website_url }}" target="_blank" class="btn btn-default">
@@ -21,8 +23,10 @@ layout: default
   {% endif %}
 </p>
 
-<hr />
+<hr>
 
 {{ content }}
+
+<hr>
 
 {% include edit.html %}
