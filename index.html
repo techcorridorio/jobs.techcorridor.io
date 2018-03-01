@@ -3,24 +3,21 @@ layout: default
 title: Featured Positions and Organizations
 ---
 
-<h2>
-  Featured Positions
-  <a href="/feature/new?utm_source=tcio_jobs_root_positions" class="btn btn-xs btn-default">Learn more</a>
-</h2>
-
 {% assign featured_positions = site.positions | where: "featured", "true" %}
 
-{% if featured_positions.size == 0 %}
-  <p>There are currently no featured positions.</p>
-{% else %}
+{% unless featured_positions.size == 0 %}
+  <h2>
+    Featured Positions
+    <a href="/feature/new?utm_source=tcio_jobs_root_positions" class="btn btn-xs btn-default">Learn more</a>
+  </h2>
   {% for position in featured_positions %}
     {% include position.html position=position %}
   {% endfor %}
-{% endif %}
 
-<p>
-  <a href="/positions/">See all {{ site.positions.size }} positions &rarr;</a>
-</p>
+  <p>
+    <a href="/positions/">See all {{ site.positions.size }} positions &rarr;</a>
+  </p>
+{% endunless %}
 
 <h2>
   Featured Organizations
