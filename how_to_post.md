@@ -22,11 +22,11 @@ This entire website is open source and pull requests to add posts are welcome!  
 
 There is currently no database; the job posts are simply a set of Markdown files.  The content of the file needs to begin with YAML frontmatter describing the post.  The rest of the file is either Markdown or HTML.  Please limit your HTML to simple formatting only, generally the same subset that Markdown allows.
 
-<a href="{{ site.github_url }}/tree/master/_organizations/_?filename=my_organization.md" class="btn btn-primary btn-lg">
+<a href="{{ site.github_url }}/new/master/_organizations/_?filename=my_organization.md" class="btn btn-primary btn-lg">
   Post an organization
 </a>
 
-Here's an example organization ([see more]({{ site.github_url }}/new/master/_organizations)):
+Here's an example organization ([see more]({{ site.github_url }}/tree/master/_organizations)):
 
     ---
     title: Example
@@ -37,11 +37,11 @@ Here's an example organization ([see more]({{ site.github_url }}/new/master/_org
 
     A blurb about the organization goes here.
     
-<a href="{{ site.github_url }}/tree/master/_positions/_?filename=my_position.md" class="btn btn-primary btn-lg">
+<a href="{{ site.github_url }}/new/master/_positions/_?filename=my_position.md" class="btn btn-primary btn-lg">
   Post a position
 </a>
 
-Here's an example position ([see more]({{ site.github_url }}/new/master/_positions)):
+Here's an example position ([see more]({{ site.github_url }}/tree/master/_positions)):
 
     ---
     source_url: http://example.com/jobs/12345.html
