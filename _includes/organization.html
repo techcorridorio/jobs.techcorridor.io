@@ -2,11 +2,15 @@
   <a href="{{ organization.url }}">{{ organization.title }}</a>
 </h3>
 
-<p>
-  {% for technology in organization.technologies %}
+{% if organization.technologies %}
+  <p>
+    <strong>Tech:</strong>
+
+    {% for technology in organization.technologies %}
     <span class="label label-default">{{ technology }}</span>
-  {% endfor %}
-</p>
+    {% endfor %}
+  </p>
+{% endif %}
 
 <p>
   {{ organization.location }}
