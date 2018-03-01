@@ -1,0 +1,9 @@
+#!/bin/bash
+url="$1"
+domain=$(echo "$url" | ruby -e 'puts ARGF.read.split(".")[-2]')
+replacement_url=$(echo "$url" | sed 's/\//\\\//g')
+
+cat _organizations/_blank.md | \
+  sed "s/{{ domain }}/$domain/g" | \
+  sed "s/{{ website_url }}/$replacement_url/g" \
+  > _organizations/$domain.md

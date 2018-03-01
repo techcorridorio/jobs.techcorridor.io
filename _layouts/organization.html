@@ -8,6 +8,13 @@ layout: default
 <hr>
 
 <p>
+  {% if organization.positions_url %}
+    <a href="{{ organization.positions_url }}" target="_blank" class="btn btn-primary">
+      {% assign url_parts = organization.url | split: '/' %}
+      View Positions
+    </a>
+  {% endif %}
+
   {% if organization.website_url %}
     <a href="{{ organization.website_url }}" target="_blank" class="btn btn-default">
       {% assign url_parts = organization.url | split: '/' %}
@@ -15,12 +22,9 @@ layout: default
     </a>
   {% endif %}
 
-  {% if organization.positions_url %}
-    <a href="{{ organization.positions_url }}" target="_blank" class="btn btn-primary">
-      {% assign url_parts = organization.url | split: '/' %}
-      View Positions
-    </a>
-  {% endif %}
+  <a href="{{ site.github_url }}/edit/master/{{ page.path }}" target="_blank" class="btn btn-default">
+    Edit Page
+  </a>
 </p>
 
 <hr>
