@@ -24,7 +24,9 @@ There is currently no database; the job posts are simply a set of Markdown files
 
 The content of the file needs to begin with YAML frontmatter describing the position.  The rest of the file is either Markdown or HTML.  Please limit your HTML to simple formatting only, generally the same subset that Markdown allows.
 
-[Post an organization]({{ site.github_url }}/new/master/_organizations/_?filename=my_organization.md)
+<a href="{{ site.github_url }}/new/master/_organizations/_?filename=my_organization.md" class="btn btn-primary btn-lg">
+  Post an organization
+</a>
 
 Here's an example organization:
 
@@ -37,7 +39,9 @@ Here's an example organization:
 
     A blurb about the organization goes here.
     
-[Post a position]({{ site.github_url }}/new/master/_positions/_?filename=my_position.md)
+<a href="{{ site.github_url }}/new/master/_positions/_?filename=my_position.md" class="btn btn-primary btn-lg">
+  Post a position
+</a>
 
 Here's an example position:
 
