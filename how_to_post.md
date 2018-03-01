@@ -6,7 +6,9 @@ permalink: /posting/how-to
 
 ### How Do I Feature a Position or Organization?
 
-Featured positions and organizations show up on the front page.  [Learn more about featuring a post...](/feature/new)
+Featured positions and organizations show up on the front page.
+
+<a class="btn btn-default" href="/feature/new">Feature your post</a>
 
 ### How Do I Post?
 
