@@ -5,18 +5,16 @@ layout: default
 {% assign organization = page %}
 {% include organization.html organization=organization %}
 
-{{ content }}
-
 <p>
   {% if organization.website_url %}
-    <a href="{{ organization.website_url }}" target="_blank" class="btn btn-default btn-lg">
+    <a href="{{ organization.website_url }}" target="_blank" class="btn btn-default">
       {% assign url_parts = organization.url | split: '/' %}
       View Website
     </a>
   {% endif %}
 
   {% if organization.positions_url %}
-    <a href="{{ organization.positions_url }}" target="_blank" class="btn btn-primary btn-lg">
+    <a href="{{ organization.positions_url }}" target="_blank" class="btn btn-primary">
       {% assign url_parts = organization.url | split: '/' %}
       View Positions
     </a>
@@ -24,6 +22,8 @@ layout: default
 </p>
 
 <hr />
+
+{{ content }}
 
 {% include edit.html %}
 
