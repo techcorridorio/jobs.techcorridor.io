@@ -6,6 +6,14 @@ permalink: /organizations/
 
 <h2>Showing {{ site.organizations.size }} Organizations</h2>
 
+<p>
+  This is a <em>wiki</em> of organizations with employees in Iowa's Technology Corridor.
+  <strong>
+    Don't see your organization?
+    <a href="/posting/new?utm_source=tcio_orgs_cta">Add it</a>.
+  </strong>
+</p>
+
 {% for organization in site.organizations %}
   {% include organization.html organization=organization %}
 {% endfor %}
