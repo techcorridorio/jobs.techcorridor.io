@@ -16,7 +16,7 @@ There are currently 2 ways to post.  (This job board is still a bit of an experi
 
 <a class="mailto" data-email="am9ic0B0ZWNoY29ycmlkb3IuaW8=">Send us an email</a> asking for help posting.  Please include all relevant position/organization details in your email.
 
-#### Pull Request (Preferred)
+#### Pull Request _(Preferred)_
 
 This entire website is open source and pull requests to add posts are welcome!  If you have the skills to , that's all that is necessary to get your post published.
 
