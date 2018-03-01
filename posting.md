@@ -10,7 +10,7 @@ redirect_from:
 
 **Thank you for your interest in adding a position or organization to this site!**  We have a growing technology community in Iowa's Technology Corridor and we'd love to help connect you.
 
-_Please understand that this community job board is maintained entirely by volunteers._  We have a vested interest in seeing our tech community grow and thrive, but our time can be limited -- though we'll do our best to review requests quickly.  (Want to lend a hand?  Get in touch in the `#admin` room on our Slack.)
+_Please understand that this community site is maintained entirely by volunteers._  We have a vested interest in seeing our tech community grow and thrive, but our time can be limited -- though we'll do our best to review requests quickly.  (Want to lend a hand?  Get in touch in the `#admin` room on our Slack.)
 
 ### Rules
 

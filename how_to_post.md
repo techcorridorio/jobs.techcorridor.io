@@ -14,15 +14,15 @@ There are currently 2 ways to post.  (This job board is still a bit of an experi
 
 #### Request Assistance
 
-<a class="mailto" data-email="am9ic0B0ZWNoY29ycmlkb3IuaW8=">Send us an email</a> asking for help posting.  Please include all relevant position/organization details in your email.
+You can request help with posting, but please be aware that this is a volunteer-run site.  When requesting assistance, please include all relevant organization/position details in your email.
+
+<a class="mailto btn btn-default" data-email="am9ic0B0ZWNoY29ycmlkb3IuaW8=">Send us an email</a>
 
 #### Pull Request _(Preferred)_
 
-This entire website is open source and pull requests to add posts are welcome!  If you have the skills to , that's all that is necessary to get your post published.
+This entire website is open source and pull requests to add posts are welcome!  If you have the skills to make a pull request, that's all that is necessary to get your post published.  There is currently no database; the posts are simply a set of Markdown files.  It's pretty straightforward after seeing some examples.
 
-There is currently no database; the job posts are simply a set of Markdown files.  The content of the file needs to begin with YAML frontmatter describing the post.  The rest of the file is either Markdown or HTML.  Please limit your HTML to simple formatting only, generally the same subset that Markdown allows.
-
-<a href="{{ site.github_url }}/new/master/_organizations/_?filename=my_organization.md" class="btn btn-primary btn-lg">
+<a href="{{ site.github_url }}/new/master/_organizations/_?filename=my_organization.md" class="btn btn-primary">
   Post an organization
 </a>
 
@@ -33,11 +33,14 @@ Here's an example organization ([see more]({{ site.github_url }}/tree/master/_or
     website_url: http://www.example.com/
     positions_url: https://www.example.com/
     location: Iowa City, IA
+    technologies:
+    - HTML5
+    - JavaScript
     ---
 
     A blurb about the organization goes here.
     
-<a href="{{ site.github_url }}/new/master/_positions/_?filename=my_position.md" class="btn btn-primary btn-lg">
+<a href="{{ site.github_url }}/new/master/_positions/_?filename=my_position.md" class="btn btn-primary">
   Post a position
 </a>
 
